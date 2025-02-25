@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Booking</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Sections */
+        section {
+            padding: 30px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #14213d;
+            margin-bottom: 15px;
+        }
+
+        /* Button */
+        .book-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #fca311;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .book-btn:hover {
+            background: #14213d;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .close-btn {
+            float: right;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Book Your Trainer</h2>
+        <p>Start your fitness journey with us..........</p>
+         <P>   CLICK TO CHOOSE PLAN 
+        </p>
+        <button id="bookNowBtn" class="book-btn">Book Now</button>
+    </section>
+
+    <!-- Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Select Your Plan</h2>
+
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan">
+                <option value="basic">Basic Plan (6 Months - ₹7500)</option>
+                <option value="standard">Standard Plan (12 Months - ₹15000)</option>
+                <option value="premium">Premium Plan (12 Months + Trainer - ₹25000)</option>
+            </select>
+
+            <label for="trainer">Choose a Trainer:</label>
+            <select id="trainer">
+                <option value="john">John - Strength & Conditioning (₹1999/month)</option>
+                <option value="krish">Krish - Cardio & Endurance (₹1499/month)</option>
+                <option value="priya">Priya - Weight Loss & Nutrition (₹999/month)</option>
+                <option value="samatha">Dr. Samatha - Flexibility & Yoga (₹1499/month)</option>
+            </select>
+
+            <button id="confirmBooking" class="book-btn">Confirm Booking</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FitFusion | Get Fit Today!</p>
+    </footer>
+
+    <script src="fee.js"></script>
+
+</body>
+</html>

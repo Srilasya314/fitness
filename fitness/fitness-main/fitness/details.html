@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header with Background Image */
+        header {
+            background: url('girl.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 50px;
+            position: relative;
+        }
+
+        /* Overlay for Better Readability */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
+            z-index: 1;
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 30px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #14213d;
+            margin-bottom: 15px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #fca311;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        /* Button */
+        .book-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #fca311;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .book-btn:hover {
+            background: #14213d;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fee Details</h1>
+        <p>Explore Our Annual Plans & Trainer Fees</p>
+    </header>
+
+    <section id="annual-plans">
+        <h2>Annual Membership Plans</h2>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Duration</th>
+                <th>Fee</th>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td>6 Months</td>
+                <td>7500INR</td>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td>12 Months</td>
+                <td>15000INR</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>12 Months + Trainer</td>
+                <td>25000INR</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="trainer-fees">
+        <h2>Trainer Fee Details</h2>
+        <table>
+            <tr>
+                <th>Trainer Name</th>
+                <th>Specialization</th>
+                <th>Monthly Fee</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Strength & Conditioning</td>
+                <td>1999INR</td>
+            </tr>
+            <tr>
+                <td>Krish</td>
+                <td>Cardio & Endurance</td>
+                <td>1499INR</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Weight Loss & Nutrition</td>
+                <td>999INR</td>
+            </tr>
+            <tr>
+                <td>Dr. Samatha</td>
+                <td>Flexibility & Yoga</td>
+                <td>1499INR</td>
+            </tr>
+        </table>
+    </section>
+
+    <a href="fee.html">
+        <button>Book Now</button>
+      </a>
+      
+
+    <footer>
+        <p>&copy; 2025 FitFusion | Get Fit Today!</p>
+    </footer>
+
+</body>
+
+</html>
